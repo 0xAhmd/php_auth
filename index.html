@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auth Forms</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- Login Form -->
+        <div class="form-container" id="login-form">
+            <div class="form-header">
+                <h2>Welcome Back</h2>
+                <p>Login to access your account</p>
+            </div>
+            <form method="POST" action="login.php">
+                <div class="form-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" class="form-control" placeholder="Enter your email" required
+                        name="email" />
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" class="form-control" placeholder="Enter your password"
+                        required name="password" />
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+            <div class="form-footer">
+                <p>Don't have an account? <button class="toggle-btn" onclick="toggleForms()">Register</button></p>
+            </div>
+        </div>
+
+        <!-- Register Form -->
+        <div class="form-container hidden" id="register-form">
+            <div class="form-header">
+                <h2>Create Account</h2>
+                <p>Join us today!</p>
+            </div>
+            <form method="POST" action="register.php">
+                <div class="form-group">
+                    <label for="register-email">Email</label>
+                    <input type="email" id="register-email" class="form-control" placeholder="Enter your email" required
+                        name="email" />
+                </div>
+                <div class="form-group">
+                    <label for="register-password">Password</label>
+                    <input type="password" id="register-password" class="form-control" placeholder="Create a password"
+                        required name="password" />
+                </div>
+                <button type="submit" class="btn btn-primary">Register</button>
+            </form>
+            <div class="form-footer">
+                <p>Already have an account? <button class="toggle-btn" onclick="toggleForms()">Login</button></p>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
