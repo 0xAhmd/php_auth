@@ -16,7 +16,6 @@ A simple user authentication system built using PHP and MySQL. This project incl
 - PHP 7.0 or higher
 - MySQL
 - Apache/Nginx (or any web server)
-- Composer (optional, if using any libraries)
 
 ## Installation
 
