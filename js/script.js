@@ -2,3 +2,11 @@ form.addEventListener('submit', function(e) {
     e.preventDefault();
     window.location.href = 'index.html?email=...';
 });
+
+function toggleForms() {
+    const loginForm = document.getElementById("login-form");
+    const registerForm = document.getElementById("register-form");
+
+    loginForm.classList.toggle("hidden");
+    registerForm.classList.toggle("hidden");
+}
